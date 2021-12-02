@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: black;
+}
+
+header {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	color: white;
+	padding: 20px;
+}
+
+button {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 1.5em;
+	color: #f3f3f3;
+}
+
+input[type="text"] {
+	width: 10em;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: rgba(255, 255, 255, 0.2);
+	color: #ffffff;
+	font-size: 1.5em;
+	border-radius: 0.5em;
+	padding: 3px 10px;
+	margin-left: 5px;
+}
+
+input:focus {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.error {
+	background-color: red;
+	color: black;
+	margin-left: 2.1em;
+	padding: 5px;
+	position: absolute;
+	display: none;
+}
+
+.content {
+	height: 300px;
+	width: 500px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.title {
+	height: 80px;
+	color: white;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	font-size: 3em;
+	font-weight: 700;
+}
+
+.description {
+	height: 40px;
+	color: white;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+.container {
+	display: flex;
+	height: 100%;
+	padding: 20px;
+}
+
+.temperature {
+	flex: 1;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6em;
+	font-weight: 900;
+}
+
+.symbol {
+	color: white;
+	padding-top: 20px;
+}
+
+.line {
+	border: 0.5px solid white;
+	margin: 0 40px;
+}
+
+.right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.right div {
+	color: white;
+	flex: 1;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
